@@ -6,7 +6,7 @@ import gradio as gr
 from backend import get_images_from_backend
 
 block = gr.Blocks(css=".container { max-width: 800px; margin: auto; }")
-backend_url = os.environ["BACKEND_SERVER"] + "/generate"
+backend_url = os.environ["BACKEND_SERVER"] + "/dalle"
 
 
 def infer(prompt):
@@ -50,4 +50,4 @@ with block:
     )
 
 
-block.launch(enable_queue=False)
+block.launch(enable_queue=False, debug=True)
