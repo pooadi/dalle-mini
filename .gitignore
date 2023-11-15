@@ -4,3 +4,4 @@ __pycache__
 wandb/
 *.egg-info/
 jax_cache/
+.idea/*
